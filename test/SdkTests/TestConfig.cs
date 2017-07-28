@@ -25,15 +25,15 @@ namespace SdkTests
         public TestConfig(string username = null, string password = null, string integratorKey = null, string host = null, string recipientEmail = null, string recipientName = null, string templateRoleName = null, string templateId = null, string returnUrl = null)
         {
 		    this.Host = (host != null) ? host : "https://demo.docusign.net/restapi";
-            this.Username = (username != null) ? username : "REQUIRED";
-            this.Password = (password != null) ? password : "REQUIRED";
-            this.IntegratorKey = (integratorKey != null) ? integratorKey : "REQUIRED";
+            this.Username = (username != null) ? username : "rfeely.docusign+demo@gmail.com";
+            this.Password = (password != null) ? password : "+YRC3Ksh94ZhLp6u6oNHesJYIf8=";
+            this.IntegratorKey = (integratorKey != null) ? integratorKey : "c1bf6319-5ece-42eb-a6b9-860bee3de1e9";
 
-            this.RecipientEmail = (recipientEmail != null) ? recipientEmail : "REQUIRED";
-            this.RecipientName = (recipientName != null) ? recipientName : "REQUIRED";
+            this.RecipientEmail = (recipientEmail != null) ? recipientEmail : "rfeely.docusign+demo@gmail.com";
+            this.RecipientName = (recipientName != null) ? recipientName : "Ronan Feely";
 
-            this.TemplateRoleName = (templateRoleName != null) ? templateRoleName : "REQUIRED";
-            this.TemplateId = (templateId != null) ? templateId : "REQUIRED";
+            this.TemplateRoleName = (templateRoleName != null) ? templateRoleName : "Customer";
+            this.TemplateId = (templateId != null) ? templateId : "4e6654e4-ce61-4d95-b36d-db5610ff71b9";
 
             this.ReturnUrl = (returnUrl != null) ? returnUrl : "https://www.docusign.com/devcenter";
         }
