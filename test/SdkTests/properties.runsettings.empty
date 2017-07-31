@@ -1,0 +1,13 @@
+<RunSettings>
+  <TestRunParameters>
+	<Parameter name="host" value="https://demo.docusign.net/restapi" />
+    <Parameter name="username" value="REQUIRED" />
+    <Parameter name="password" value="REQUIRED" />
+	<Parameter name="integratorKey" value="REQUIRED" />
+	<Parameter name="recipientEmail" value="REQUIRED" />
+	<Parameter name="recipientName" value="REQUIRED" />
+	<Parameter name="templateRoleName" value="REQUIRED" />
+	<Parameter name="templateId" value="REQUIRED" />
+	<Parameter name="returnURL" value="https://www.docusign.com/devcenter" />
+  </TestRunParameters>
+</RunSettings>

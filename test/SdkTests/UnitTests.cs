@@ -12,12 +12,33 @@ namespace SdkTests
     [TestClass]
     public class UnitTests
     {
-        TestConfig testConfig = new TestConfig();
+        public static string Host = string.Empty;
+        public static string Username = string.Empty;
+        public static string Password = string.Empty;
+        public static string IntegratorKey = string.Empty;
+        public static string RecipientEmail = string.Empty;
+        public static string RecipientName = string.Empty;
+        public static string TemplateRoleName = string.Empty;
+        public static string TemplateId = string.Empty;
+        public static string ReturnURL = string.Empty;
 
-        //public UnitTests()
-        //{
-        //    testConfig = new TestConfig();
-        //}
+        [ClassInitialize]
+        public static void TestClassinitialize(TestContext context)
+        {
+            Host = context.Properties["host"].ToString();
+            Username = context.Properties["username"].ToString();
+            Password = context.Properties["password"].ToString();
+            IntegratorKey = context.Properties["integratorKey"].ToString();
+            RecipientEmail = context.Properties["recipientEmail"].ToString();
+            RecipientName = context.Properties["recipientName"].ToString();
+            TemplateRoleName = context.Properties["templateRoleName"].ToString();
+            TemplateId = context.Properties["templateId"].ToString();
+            ReturnURL = context.Properties["returnURL"].ToString();
+        }
+
+        public TestContext TestContext { get; set; }
+
+        TestConfig testConfig = new TestConfig(Username, Password, IntegratorKey, Host, RecipientEmail, RecipientName, TemplateRoleName, TemplateId, ReturnURL);
 
         [TestInitialize()]
         [TestMethod]
